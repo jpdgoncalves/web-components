@@ -48,10 +48,56 @@ div.temporary {
 
 /** Command input area **/
 div.command-area {
+    position: absolute;
+    bottom: 32px;
+    width: calc(100vw - 64px);
     margin-left: 32px;
     margin-right: 32px;
     box-sizing: border-box;
+
     display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 8px;
 
     outline: 1px black solid;
+}
+
+div.command-area div {
+    justify-self: start;
+    align-self: center;
+
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    
+    font-size: 32px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    outline: 1px greenyellow solid;
+}
+
+div.command-area span {
+    align-self: center;
+    justify-self: stretch;
+    min-height: 32px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 8px;
+    display: grid;
+    align-content: center;
+
+    outline: 1px red solid;
+}
+
+div.command-area button {
+
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+
+    align-self: center;
+
+    outline: 1px blue solid;
 }
