@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="module" src="js/main.mjs"></script>
+    </head>
+    <body>
+        <!-- Script display -->
+        <main>
+            <!-- Script title -->
+            <h1 class="selectable">The Title of the Script</h1>
+            <!-- Script subtitle -->
+            <h2 class="selectable">A subtitle</h2>
+            <!-- Narration text. Any text that isn't related to a character -->
+            <p class="selectable narration-text">This is some narrated text</p>
+            <!-- Character text. Any text that is a dialogue line for a character or actions related to said character -->
+            <div class="selectable character-text">
+                <!-- Character Avatar -->
+                <img>
+                <!-- Character Name -->
+                <span>Character Name</span>
+                <!-- Dialogue line, actions made by character, etc -->
+                <p>"The character said something"</p>
+            </div>
+            <!-- Used to display a temporary menu -->
+            <div class="temporary">Temporary menu</div>
+        </main>
+        <!-- Command input area -->
+        <div class="command-area">
+            <!-- Mode. It can be edit or add -->
+            <ul>
+                <li>Add</li>
+                <li>Edit</li>
+            </ul>
+            <!-- Area to type the commands -->
+            <span>Type your commands here...</span>
+            <!-- Button to press to send the command -->
+            <button>Send</button>
+        </div>
+    </body>
+</html>
