@@ -95,7 +95,7 @@ div.command-area button {
 
     height: 32px;
     width: 32px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: inherit;
     font-size: 32px;
     padding: 0;
     margin: 0;
