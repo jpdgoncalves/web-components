@@ -1,0 +1,45 @@
+html, body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+span.green {
+    display: inline-block;
+    background-color: green;
+    
+}
+
+span.blue {
+    display: inline-block;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+
+span.red {
+    display: inline-block;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+span.yellow {
+    display: inline-block;
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+}
+
+
+/** Ensure that font is same for all **/
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
