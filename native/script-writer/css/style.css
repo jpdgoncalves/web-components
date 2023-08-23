@@ -26,23 +26,54 @@ h1 {
 
 /** Script subtitle **/
 h2 {
+    position: relative;
     margin: 32px 32px;
     text-align: center;
 }
 
 /** Narration text **/
 p.narration-text {
-    margin: 24px 32px;
+    position: relative;
+    margin: 16px 32px;
     font-style: italic;
 }
 
 /** Character text **/
 div.character-text {
-    margin: 24px 32px;
+    position: relative;
+    margin: 16px 32px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+        "avatar name"
+        "text text";
+}
+
+div.character-text img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 32px;
+    border-radius: 50%;
+    grid-area: avatar;
+}
+
+div.character-text span {
+    grid-area: name;
+    margin-left: 8px;
+    justify-self: start;
+    align-self: end;
+}
+
+div.character-text p {
+    margin: 0;
+    margin-top: 8px;
+    grid-area: text;
 }
 
 /** Temporary menu **/
 div.temporary {
+    position: relative;
     margin: 24px 32px;
 }
 
@@ -55,17 +86,19 @@ div.command-area {
     margin-right: 32px;
     box-sizing: border-box;
 
+    background-color: white;
+
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 8px;
-
-    outline: 1px black solid;
 }
 
-div.command-area div {
+div.command-area lt-sliding-menu {
     justify-self: start;
     align-self: center;
+}
 
+div.command-area div.edit-mode {
     border-radius: 50%;
     height: 32px;
     width: 32px;
@@ -75,7 +108,8 @@ div.command-area div {
     justify-content: center;
     align-content: center;
 
-    outline: 1px greenyellow solid;
+    box-sizing: border-box;
+    border: 1px black solid;
 }
 
 div.command-area span {
@@ -84,22 +118,22 @@ div.command-area span {
     min-height: 32px;
     border-radius: 16px;
     box-sizing: border-box;
-    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
     display: grid;
     align-content: center;
 
-    outline: 1px red solid;
+    border: 1px black solid;
 }
 
 div.command-area button {
-
     height: 32px;
     width: 32px;
     font-family: inherit;
     font-size: 32px;
     padding: 0;
     margin: 0;
-    border: 0;
+    border: 1px black solid;
     border-radius: 50%;
 
     align-self: center;
@@ -109,6 +143,4 @@ div.command-area button {
     align-items: center;
     justify-items: center;
     box-sizing: border-box;
-
-    outline: 1px blue solid;
 }

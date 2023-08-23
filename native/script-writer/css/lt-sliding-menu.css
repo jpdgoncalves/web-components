@@ -1,0 +1,49 @@
+
+lt-sliding-menu > div.sliding-menu {
+    position: relative;
+    cursor: pointer;
+}
+
+lt-sliding-menu > div.sliding-menu > ul.items-list {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: none;
+}
+
+lt-sliding-menu > div.sliding-menu > ul.items-list.show {
+    display: flex;
+}
+
+lt-sliding-menu > div.sliding-menu > ul.items-list.top {
+    flex-direction: column;
+    bottom: 100%;
+}
+
+lt-sliding-menu > div.sliding-menu > ul.items-list.bottom {
+    flex-direction: column;
+}
+
+lt-sliding-menu > div.sliding-menu > ul.items-list.left {
+    flex-direction: row;
+    bottom: 0;
+    right: 100%;
+}
+lt-sliding-menu > div.sliding-menu > ul.items-list.right {
+    flex-direction: row;
+    bottom: 0;
+    left: 100%;
+}
+
+lt-sliding-menu > div.sliding-menu > ul.items-list > li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+lt-sliding-menu > div.sliding-menu > ul.items-list > li.selected {
+    display: none;
+}
