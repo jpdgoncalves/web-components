@@ -1,0 +1,31 @@
+html, body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/** Ensure that font is same for all **/
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+body > div > div.clickable {
+    outline: 1px black solid;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+span.mine {
+    display: block;
+    padding-top: 10px;
+}
