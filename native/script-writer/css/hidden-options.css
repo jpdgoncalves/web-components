@@ -1,0 +1,18 @@
+
+div.lt-hidden-options {
+    position: relative;
+}
+
+/* Position this to move the list around*/
+div.lt-hidden-options > ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: none;
+}
+
+div.lt-hidden-options.show > ul {
+    display: initial;
+}

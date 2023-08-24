@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/hidden-options.css">
         <link rel="stylesheet" href="css/lt-sliding-menu.css">
         <link rel="stylesheet" href="css/style.css">
 
@@ -14,9 +15,29 @@
             <!-- Script title -->
             <h1 class="selectable">The Title of the Script</h1>
             <!-- Script subtitle -->
-            <h2 class="selectable">A subtitle</h2>
+            <h2 class="selectable">
+                A subtitle
+                <div class="options">
+                    <span>...</span>
+                    <div class="lt-hidden-options">
+                        <ul>
+                            <li>Delete</li>
+                        </ul>
+                    </div>
+                </div>
+            </h2>
             <!-- Narration text. Any text that isn't related to a character -->
-            <p class="selectable narration-text">This is some narrated text</p>
+            <div class="selectable narration-text">
+                <p>This is some narrated text</p>
+                <div class="options">
+                    <span>...</span>
+                    <div class="lt-hidden-options">
+                        <ul>
+                            <li>Delete</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <!-- Character text. Any text that is a dialogue line for a character or actions related to said character -->
             <div class="selectable character-text">
                 <!-- Character Avatar -->
@@ -25,9 +46,22 @@
                 <span>Character Name</span>
                 <!-- Dialogue line, actions made by character, etc -->
                 <p>"The character said something"</p>
+                <div class="options">
+                    <span>...</span>
+                    <div class="lt-hidden-options">
+                        <ul>
+                            <li>Delete</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- Used to display a temporary menu -->
-            <div class="temporary">Temporary menu</div>
+            <div class="temporary">
+                <div class="close">
+                    <span>X</span>
+                </div>
+                Temporary menu
+            </div>
         </main>
         <!-- Command input area -->
         <div class="command-area">
