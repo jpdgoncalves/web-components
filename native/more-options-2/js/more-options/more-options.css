@@ -1,0 +1,75 @@
+.more-options {
+    position: relative;
+
+    --options-padding: 8px; 
+    --top: calc(100% + 8px);
+    --bottom: unset;
+    --left: unset;
+    --right: 0;
+
+}
+
+
+.more-options__content {
+    position: absolute;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+    
+    margin: 0;
+    padding: 0;
+    top: var(--top);
+    bottom: var(--bottom);
+    left: var(--left);
+    right: var(--right);
+    list-style: none;
+    border-radius: 12px;
+    padding: 16px;
+    width: max-content;
+
+    background-color: #eeeeee;
+}
+
+.more-options__content[data-show=hide] {
+    visibility: hidden;
+}
+
+.more-options__content[data-show=true] {
+    opacity: 1;
+}
+
+.more-options__content > li {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.more-options__content > li:nth-child(n + 2) {
+    margin-top: 4px;
+}
+
+.more-options__content > li:hover {
+    background-color: #cccccc;
+}
+
+
+.more-options__icon {
+    display: block;
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #eeeeee;
+    transition: background-color .5s ease-in-out;
+}
+
+.more-options__icon:hover {
+    background-color: #cccccc;
+}
