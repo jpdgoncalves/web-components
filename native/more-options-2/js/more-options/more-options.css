@@ -45,7 +45,7 @@
     padding-top: 4px;
     padding-left: 4px;
     padding-right: 4px;
-    border-radius: 12px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color .5s ease-in-out;
 }
