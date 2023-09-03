@@ -1,0 +1,43 @@
+.toast {
+    position: absolute;
+    width: max-content;
+    display: none;
+
+    --toast-margin: 16px;
+    --content-padding: 8px;
+}
+
+.toast[data-show=true] {
+    display: block;
+}
+
+.toast[data-aligment=center] {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toast[data-aligment=left] {
+    left: var(--toast-margin);
+}
+
+.toast[data-aligment=right] {
+    right: var(--toast-margin);
+}
+
+.toast[data-position=top] {
+    top: var(--toast-margin);
+}
+
+.toast[data-position=bottom] {
+    bottom: var(--toast-margin);
+}
+
+.toast__content {
+    position: relative;
+    background-color: #dddddd;
+    border-radius: var(--content-padding);
+    padding: var(--content-padding);
+    outline: 1px solid black;
+}
