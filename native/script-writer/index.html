@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <script type="module" src="js/main.mjs"></script>
-    </head>
-    <body>
-        <main class="script">
-            <div class="script__title">
-                <h1>This is a Title</h1>
-            </div>
-            <div class="script__subtitle">
-                <h2>
-                    This is a subtitle
-                </h2>
-            </div>
-            <div class="script__narration">
-                <p>
-                    This is narration text
-                </p>
-            </div>
-            <div class="script__dialog"></div>
-            <div class="script__temporary"></div>
-        </main>
-        <div class="commands">
-            <div class="commands__mode"></div>
-            <div class="commands__input">Input commands here</div>
-            <div class="commands__send"></div>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/components/mode/mode.css">
+    <link rel="stylesheet" href="js/components/more-options/more-options.css">
+
+    <script type="module" src="js/components/mode/mode.mjs"></script>
+    <script type="module" src="js/main.mjs"></script>
+</head>
+
+<body>
+    <main class="script">
+        <div class="script__title">
+            <h1>This is a Title</h1>
         </div>
-    </body>
+        <div class="script__subtitle">
+            <h2>
+                This is a subtitle
+            </h2>
+        </div>
+        <div class="script__narration">
+            <p>
+                This is narration text
+            </p>
+        </div>
+        <div class="script__dialog">
+            <img>
+            <span>Character Name</span>
+            <p>This is some dialog text</p>
+        </div>
+        <div class="script__temporary"></div>
+    </main>
+    <div class="commands">
+        <div class="commands__mode mode" data-side="top">
+            <img class="mode__icon">
+            <ul class="mode__content">
+                <li class="mode__option"><img src="./icons/ellipsis.svg" alt="" class="mode__icon"></li>
+                <li class="mode__option"><img src="./icons/plus.svg" alt="" class="mode__icon"></li>
+                <li class="mode__option"><img src="./icons/X-2.svg" alt="" class="mode__icon"></li>
+            </ul>
+        </div>
+        <div class="commands__input" contenteditable="true">Input commands here</div>
+        <div class="commands__send"></div>
+    </div>
+</body>
+
 </html>

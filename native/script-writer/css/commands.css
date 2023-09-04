@@ -7,19 +7,20 @@
     height: 64px;
     width: 100%;
     bottom: 0;
-    background-color: blue;
 }
 
-.commands__mode {
-    
-
-    background-color: rgb(0, 255, 0);
-}
+.commands__mode {}
 
 .commands__input {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgb(0, 255, 0);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.commands__input:focus {
+    background-color: #dddddd;
+    outline: none;
 }
 
 .commands__send {

@@ -1,30 +1,114 @@
 .script {
     overflow: hidden;
     height: calc(100% - 64px);
-
-    background-color: rgb(0, 255, 0);
 }
 
 
 .script__title {
     position: relative;
-    outline: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
+
+    background-color: red;
+}
+
+.script__title:hover {
+    background-color: #dddddd;
+}
+
+.script__title > h1 {
+    margin: 0;
 }
 
 
 .script__subtitle {
     position: relative;
-    outline: 1px solid red;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.script__subtitle:hover {
+    background-color: #dddddd;
+}
+
+.script__subtitle > h2 {
+    margin: 0;
 }
 
 
 .script__narration {
     position: relative;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.script__narration:hover {
+    background-color: #dddddd;
+}
+
+.script__narration > p {
+    display: block;
+    margin: 0;
 }
 
 
 .script__dialog {
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     position: relative;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    row-gap: 8px;
+    grid-template-areas: 
+        "icon character-name"
+        "text text";
+    transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.script__dialog:hover {
+    background-color: #dddddd;
+}
+
+.script__dialog > img {
+    grid-area: icon;
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #dddddd;
+}
+
+.script__dialog > span {
+    grid-area: character-name;
+    display: block;
+    align-self: end;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.script__dialog > p {
+    display: block;
+    grid-area: text;
+    padding: 0;
+    margin: 0;
 }
 
 

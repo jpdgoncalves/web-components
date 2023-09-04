@@ -1,0 +1,83 @@
+
+.mode {
+    position: relative;
+
+    --icon-size: 40px;
+    --padding-size: 8px;
+    --margin-size: 8px;
+    --transition-duration: .25s;
+}
+
+
+.mode__content {
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.mode[data-side="right"] > .mode__content {
+    max-width: 0;
+    transition: max-width var(--transition-duration) ease-in-out;
+    bottom: 0;
+    left: 100%;
+}
+
+.mode[data-side="left"] > .mode__content {
+    max-width: 0;
+    transition: max-width var(--transition-duration) ease-in-out;
+    bottom: 0;
+    right: 100%;
+}
+
+.mode[data-side="top"] > .mode__content {
+    flex-direction: column;
+    max-height: 0;
+    transition: max-height var(--transition-duration) ease-in-out;
+    bottom: 100%;
+}
+
+.mode[data-side="bottom"] > .mode__content {
+    flex-direction: column;
+    max-height: 0;
+    transition: max-height var(--transition-duration) ease-in-out;
+}
+
+
+.mode__option {
+    margin: 0;
+    padding: 0;
+}
+
+.mode[data-side="right"] > .mode__content > .mode__option {
+    margin-left: var(--margin-size);
+}
+
+.mode[data-side="left"] > .mode__content > .mode__option {
+    margin-right: var(--margin-size);
+}
+
+.mode[data-side="top"] > .mode__content > .mode__option {
+    margin-bottom: var(--margin-size);
+}
+
+.mode[data-side="bottom"] > .mode__content > .mode__option {
+    margin-top: var(--margin-size);
+}
+
+
+.mode__icon {
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    padding: var(--padding-size);
+    border-radius: 50%;
+    display: block;
+}
+
+.mode__icon:hover {
+    background-color: #dddddd;
+}
