@@ -11,6 +11,7 @@
 
 
 .more-options__content {
+    z-index: 2;
     position: absolute;
     display: flex;
     align-items: stretch;
