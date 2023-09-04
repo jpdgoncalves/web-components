@@ -67,6 +67,7 @@
     padding: 8px;
     border-radius: 12px;
     background-color: #eeeeee;
+    cursor: pointer;
     transition: background-color .5s ease-in-out;
 }
 
