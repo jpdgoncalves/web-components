@@ -98,7 +98,7 @@
 .script__dialog > span {
     grid-area: character-name;
     display: block;
-    align-self: end;
+    align-self: center;
     margin-left: 8px;
     font-weight: bold;
 }
