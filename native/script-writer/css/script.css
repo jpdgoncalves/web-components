@@ -15,8 +15,6 @@
     margin-bottom: 24px;
     transition: background-color 0.25s ease-in-out;
     cursor: pointer;
-
-    background-color: red;
 }
 
 .script__title:hover {
@@ -25,6 +23,7 @@
 
 .script__title > h1 {
     margin: 0;
+    font-size: 32px;
 }
 
 

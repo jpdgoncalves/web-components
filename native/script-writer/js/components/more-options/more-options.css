@@ -1,5 +1,6 @@
 .more-options {
     position: relative;
+    align-self: start;
 
     --options-padding: 8px; 
     --top: calc(100% + 8px);
@@ -62,11 +63,11 @@
 .more-options__icon {
     display: block;
     box-sizing: border-box;
-    width: 48px;
-    height: 48px;
-    padding: 8px;
+    width: 40px;
+    height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 12px;
-    background-color: #eeeeee;
     cursor: pointer;
     transition: background-color .5s ease-in-out;
 }

@@ -3,19 +3,34 @@
     grid-template-columns: 40px 1fr 40px;
     gap: 12px;
     box-sizing: border-box;
-    padding: 12px;
+
+    padding-bottom: 12px;
+    padding-top: 12px;
     height: 64px;
     width: 100%;
     bottom: 0;
 }
 
-.commands__mode {}
+.commands__mode {
+    cursor: pointer;
+}
 
 .commands__input {
     padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 20px;
     background-color: #eeeeee;
     transition: background-color 0.25s ease-in-out;
+}
+
+.commands__input:empty::before {
+    color: gray;
+    content: "Input commands here";
+}
+
+.commands__input:hover {
+    background-color: #dddddd;
 }
 
 .commands__input:focus {
@@ -24,5 +39,20 @@
 }
 
 .commands__send {
-    background-color: rgb(0, 255, 0);;
+    cursor: pointer;
+}
+
+.commands__send > img {
+    display: block;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    border-radius: 20px;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.commands__send:hover > img {
+    background-color: #dddddd;
 }
