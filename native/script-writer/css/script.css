@@ -1,0 +1,33 @@
+.script {
+    overflow: hidden;
+    height: calc(100% - 64px);
+
+    background-color: rgb(0, 255, 0);
+}
+
+
+.script__title {
+    position: relative;
+    outline: 1px solid red;
+}
+
+
+.script__subtitle {
+    position: relative;
+    outline: 1px solid red;
+}
+
+
+.script__narration {
+    position: relative;
+}
+
+
+.script__dialog {
+    position: relative;
+}
+
+
+.script__temporary {
+    position: relative;
+}

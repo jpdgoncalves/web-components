@@ -73,9 +73,28 @@
     "Element": {
         "scope": "javascript",
         "prefix": ["element"],
-        "description": "Boiler plate for creating a element",
+        "description": "Boilerplate for creating a element",
         "body": [
             "const $1 = document.createElement(\"$2\")"
+        ]
+    },
+    "Private property": {
+        "scope": "javascript",
+        "prefix": ["private", "#"],
+        "description": "Boilerplate code for creating a property",
+        "body": [
+            "#$1",
+            "get $1() { return this.#$1 }",
+            "set $1(value) { this.#$1 = value }"
+        ]
+    },
+    "Web Component Attribute": {
+        "scope": "javascript",
+        "prefix": ["attribute", "#"],
+        "description": "Boilerplate code for creating atribute accessors",
+        "body": [
+            "get $1() { return this.getAttribute(\"$1\") }",
+            "set $1(value) { this.setAttribute(\"$1\", value) }"
         ]
     }
 }
