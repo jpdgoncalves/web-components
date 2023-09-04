@@ -14,6 +14,7 @@
 .more-options__content {
     position: absolute;
     display: flex;
+    z-index: 2;
     align-items: stretch;
     flex-direction: column;
     opacity: 0;
