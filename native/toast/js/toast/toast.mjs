@@ -11,8 +11,8 @@ if (!(toastElement = document.querySelector(".toast"))) {
 
 if (!(toastContent = document.querySelector(".toast__content"))) {
     toastContent = document.createElement("div");
-    toastContent.classList.add("toast");
-    document.body.appendChild(toastContent);
+    toastContent.classList.add("toast__content");
+    toastElement.appendChild(toastContent);
 }
 
 timeout = parseInt(toastElement.dataset.timeout) * 1000;
