@@ -1,13 +1,14 @@
 .commands {
+    position: fixed;
     display: grid;
+    align-items: center;
     grid-template-columns: 40px 1fr 40px;
     gap: 12px;
     box-sizing: border-box;
 
     padding-bottom: 12px;
     padding-top: 12px;
-    height: 64px;
-    width: 100%;
+    width: calc(100% - 48px);
     bottom: 0;
 }
 
