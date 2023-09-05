@@ -41,7 +41,7 @@ for (let moreOptions of moreOptionsList) {
             const icon = option.children[0];
             displayIcon.src = icon.src;
             moreOptions.dispatchEvent(new CustomEvent("selected", {
-                detail: icon
+                detail: option
             }));
 
         });
