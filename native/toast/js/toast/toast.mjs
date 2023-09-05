@@ -6,6 +6,8 @@ let timeoutId;
 if (!(toastElement = document.querySelector(".toast"))) {
     toastElement = document.createElement("div");
     toastElement.classList.add("toast");
+    toastElement.dataset.aligment = "center";
+    toastElement.dataset.position = "top";
     document.body.appendChild(toastElement);
 }
 
