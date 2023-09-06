@@ -3,6 +3,10 @@
     height: 100%
 }
 
+.script__selected {
+    background-color: #dddddd;
+}
+
 
 .script__title {
     position: relative;
