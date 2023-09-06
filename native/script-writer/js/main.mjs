@@ -8,6 +8,6 @@ commands.addEventListener(SELECTED_MODE_EVENT, (event) => {
 });
 
 commands.addEventListener(COMMAND_SENT_EVENT, (event) => {
-    const [cmd, arg] = parseCommand(event.detail);
-    toast(`Command: '${cmd}', Argument: '${arg}'`);
+    const [cmd, arg] = parseCommand(event.detail)
+    toast(`Command: '${cmd}', Argument: '${arg}'`)
 });
