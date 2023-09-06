@@ -33,6 +33,9 @@
 
 .script__subtitle {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 8px;
     padding: 8px;
     border-radius: 8px;
     margin-top: 12px;
@@ -52,6 +55,9 @@
 
 .script__narration {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 8px;
     padding: 8px;
     border-radius: 8px;
     margin-top: 8px;
@@ -77,11 +83,11 @@
     margin-bottom: 8px;
     position: relative;
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 40px 1fr 40px;
     row-gap: 8px;
     grid-template-areas: 
-        "icon character-name"
-        "text text";
+        "icon character-name options"
+        "text text .";
     transition: background-color 0.25s ease-in-out;
     cursor: pointer;
 }
@@ -112,6 +118,10 @@
     grid-area: text;
     padding: 0;
     margin: 0;
+}
+
+.script__dialog > .more-options {
+    grid-area: text;
 }
 
 
