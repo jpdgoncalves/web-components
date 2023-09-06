@@ -3,12 +3,12 @@ import element from "../utils/elements.mjs";
 
 /**
  * 
- * @param {string} subtitle 
+ * @param {string} narration 
  */
-export function createNarration(subtitle) {
+export function createNarration(narration) {
     const builder = element("div").classes("script__narration");
     const scriptNarration = builder.element;
-    builder.child("h2").text(subtitle);
+    builder.child("p").text(narration);
     const moreOptions = builder.child(createMoreOptions("./icons/ellipsis.svg", "delete"));
     moreOptions.listener("selected", (event) => {
         scriptNarration.remove();
