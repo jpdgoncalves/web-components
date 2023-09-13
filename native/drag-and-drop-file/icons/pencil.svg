@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="SVGRoot" width="16px" height="16px" version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <path d="m1.2929 2.7071 1.4142-1.4142a1 1 180 0 1 1.4142 0l1.4142 1.4142-2.8284 2.8284-1.4142-1.4142a1 1 90 0 1 0-1.4142z"/>
+  <rect transform="rotate(-45)" x="-2" y="6.2426" width="4" height="10"/>
+  <path d="m10.5 13.328 4.2426 1.4142-1.4142-4.2426z"/>
+ </g>
+</svg>
